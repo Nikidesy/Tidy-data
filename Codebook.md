@@ -70,7 +70,7 @@ All the variables were normalised so they have no measurement units.
 
 The raw data was processed with the run_analysis.R script in order to get to the tidy dataset. For this several processing steps were taken:
 
-1. Preprocessing: 
+Preprocessing: 
 
 * Reading in the file with the features (features.txt) which corresponds to the column names (variable names)
 * Reading in the test data (X_test.txt) and the corresponding subjects dataset (subject_test.txt) and activity dataset (Y_test.txt) 
@@ -87,26 +87,34 @@ The raw data was processed with the run_analysis.R script in order to get to the
  
 6. Create a tidy data set with the average of each variable for each activity and each subject:
 From the intermediate dataset obtained by the previous steps, a new tidy set was created with the following characteristics:
-* The tidy data set contains 180 observations with 81 variables
-* The Subject_ID variable is an identifier for the test subject, this variable ranges from 1 to 30
-* The Activity variable describes the activity the test subjects were doing during the measurment: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* The other 79 variables are normalized time and frequency domain signal variables. The following table gives an overview of the parts that make up the variable names and their description.
+ * The tidy data set contains 180 observations with 81 variables
+ * The Subject_ID variable is an identifier for the test subject, this variable ranges from 1 to 30
+ * The Activity variable describes the activity the test subjects were doing during the measurment: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+ * The other 79 variables are normalized time and frequency domain signal variables. The following table gives an overview of the parts that make up the variable names and their description.
 
-| Codes
-| -------------   |:-------------:|
-| BodyAcc         |
-| GravityAcc      |
-| BodyAccJerk     |
-| BodyGyro        |
-| BodyGyroJerk    | 
-| BodyAccMag      |
-| GravityAccMag   |
-| BodyAccJerkMag  |
-| BodyGyroMag     | 
-BodyGyroJerkMag
+| Codes           |Description                       |
+| ----------------|----------------------------------|
+| BodyAcc         | Body Acceleration                |
+| GravityAcc      | Gravity Acceleration             |
+| BodyAccJerk     | Body Acceleration Jerk           |
+| BodyGyro        | Body Angular Speed               |
+| BodyGyroJerk    | Body Angular Jerk                |
+| BodyAccMag      | Body Acceleration Magnitude      |
+| GravityAccMag   | Gravity Acceleration Magnitude   |
+| BodyAccJerkMag  | Body Acceleration Jerk Magnitude |
+| BodyGyroMag     | Body Angular Speed Magnitude     |
+| BodyGyroJerkMag | Body Angular Jerk Magnitude      |
+| t               | Time domain                      |
+| f               | Frequency domain                 |
+| X               | X axis direction                 |
+| Y               | Y axis direction                 |
+| Z               | Z axis direction                 |
 
 
+All the variables are either mean (with -mean()) or standard deviations (with -std())
+All the variables were normalised so they have no measurement units.
 
+The tidy data can be found in the Samsung_Av_Subj_Act.txt file in the working directory.
  
 
  
