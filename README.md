@@ -45,4 +45,4 @@ Required library: dplyr
 
 3. Run run_analaysis.R script
 
-4. The resulting tidy dataset named **Samsung_Av_Subj_Act.csv** can be found in your working directory.
+4. The resulting tidy dataset named **Samsung_Av_Subj_Act.txt** can be found in your working directory.
