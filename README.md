@@ -38,7 +38,11 @@ You should create one R script called run_analysis.R that does the following.
 
 ## How to run run_analysis.R
 Required library: dplyr
+
 1. Set your home directory with setwd() command.
+
 2. Download the [raw data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), unzip it and make sure the data is in a subfolder, named "UCI HAR Dataset", of the working directory.
+
 3. Run run_analaysis.R script
-4. The resulting tidy dataset named Samsung_Av_Subj_Act.csv can be found in your working directory.
+
+4. The resulting tidy dataset named **Samsung_Av_Subj_Act.csv** can be found in your working directory.
