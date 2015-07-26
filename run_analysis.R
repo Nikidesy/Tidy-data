@@ -62,6 +62,6 @@ df_Sub_Act <- group_by(df_meanstd, Subject_ID, Activity)
 # make df that averges each variable per subject & activity
 Averages_Sub_Act <- summarise_each(df_Sub_Act, funs(mean))
 
-#write file to csv
-write.csv(Averages_Sub_Act,"Samsung_Av_Subj_Act.csv", row.names=FALSE)
+#write file to text
+write.table(Averages_Sub_Act,"Samsung_Av_Subj_Act.txt", row.names=FALSE)
 
